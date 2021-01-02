@@ -1,0 +1,77 @@
+.home-icon {
+  color: lightgray;
+  padding-left: 97%;
+}
+.home-icon :hover {
+  color: whitesmoke;
+}
+
+.sliderValue {
+  display: block;
+  color: whitesmoke;
+  font-family: Arial, Helvetica;
+}
+
+.search-input-col {
+  padding-top: 2%;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu > li {
+  background: #34495e;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial, Helvetica;
+  font-size: 130%;
+}
+
+.menu a :hover {
+  font-size: 140%;
+  border-bottom: 3px solid whitesmoke;
+}
+.menu li:hover {
+  background: #e74c3c;
+}
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  width: 100%;
+  text-align: center;
+  padding-right: 2%;
+  transform: skewX(-25deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.submenu li {
+  transition: 0.2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}
